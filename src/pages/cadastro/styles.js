@@ -23,12 +23,10 @@ export const Column = styled.div`
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
 `
-
-
 
 export const Title = styled.h2`
     font-family: 'Open Sans';
@@ -42,16 +40,16 @@ export const Title = styled.h2`
     color: #FFFFFF;
 `
 
-export const TitleLogin = styled.p`
+export const TitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 44px;
     margin-bottom: 8px;
 `
 
-export const SubtitleLogin = styled.p`
+export const SubTitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -60,24 +58,32 @@ export const SubtitleLogin = styled.p`
     margin-bottom: 35px;
 `
 
-
-export const EsqueciText  = styled.p`
+export const Mensagem = styled.span`
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+`
 
-    color: #E5E044;
-` 
+export const MensagemJaTenho = styled.span`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 0.9rem;
+`
 
-export const CriarText =  styled.p`
+export const FacaLogin = styled.span`
     cursor: pointer;
     font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-
+    font-weight: bold;
+    font-size: 0.9rem;
     color: #23DD7A;
+    margin-left: 0.5em;
+`
+
+export const FormError = styled.div`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: red;
 `
